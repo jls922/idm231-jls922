@@ -41,7 +41,7 @@ html {
 
 a {
     color: var(--link-light);
-    font-family: Kanit;
+    /*font-family: Kanit; tbd*/
 }
 
 body {
