@@ -25,51 +25,51 @@ function play_audio(src) {
 }
 
 document.getElementById('kaito').addEventListener('click', function() {
-    play_audio('sounds/kaito.mp3');
+    play_audio('audio/kaito.mp3');
 });
 
 document.getElementById('luka').addEventListener('click', function() {
-    play_audio('sounds/luka.mp3');
+    play_audio('audio/luka.mp3');
 });
 
 document.getElementById('len').addEventListener('click', function() {
-  play_audio('sounds/len.mp3');
+  play_audio('audio/len.mp3');
 });
 
 document.getElementById('gumi').addEventListener('click', function() {
-  play_audio('sounds/gumi.mp3');
+  play_audio('audio/gumi.mp3');
 });
 
 document.getElementById('miku').addEventListener('click', function() {
-  play_audio('sounds/miku.mp3');
+  play_audio('audio/miku.mp3');
 });
 
 document.getElementById('teto').addEventListener('click', function() {
-  play_audio('sounds/teto.mp3');
+  play_audio('audio/teto.mp3');
 });
 
 document.getElementById('mayu').addEventListener('click', function() {
-  play_audio('sounds/mayu.mp3');
+  play_audio('audio/mayu.mp3');
 });
 
 document.getElementById('seeu').addEventListener('click', function() {
-  play_audio('sounds/seeu.mp3');
+  play_audio('audio/seeu.mp3');
 });
 
 document.getElementById('rin').addEventListener('click', function() {
-  play_audio('sounds/rin.mp3');
+  play_audio('audio/rin.mp3');
 });
 
 document.getElementById('mew').addEventListener('click', function() {
-  play_audio('sounds/mew.mp3');
+  play_audio('audio/mew.mp3');
 });
 
 document.getElementById('meiko').addEventListener('click', function() {
-  play_audio('sounds/meiko.mp3');
+  play_audio('audio/meiko.mp3');
 });
 
 document.getElementById('lily').addEventListener('click', function() {
-  play_audio('sounds/lily.mp3');
+  play_audio('audio/lily.mp3');
 });
 
 
@@ -253,3 +253,18 @@ function getZodiac(month, day) {
     return -1;
   }
 }
+
+const helpButton = document.getElementById('help-button');
+const closeHelpButton = document.getElementById('close-help');
+const helpPopup = document.getElementById('help-popup');
+
+    function showHelpPopup() {
+        helpModal.style.display = 'flex';
+    }
+    
+    function closeHelpPopup() {
+        helpModal.style.display = 'none';
+    }
+    
+    helpButton.addEventListener('click', showHelpPopup);
+    closeHelpButton.addEventListener('click', closeHelpPopup);
