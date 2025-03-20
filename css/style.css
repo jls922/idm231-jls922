@@ -79,7 +79,7 @@ button {
   width: fit-content;
 }
 
-.button:hover {
+button:hover {
   background-color: white;
   color: var(--link-light);
   border: 2px solid var(--link-light);
