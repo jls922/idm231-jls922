@@ -65,6 +65,24 @@ p {
     /*font-family: ; tbd*/
 }
 
+.grid-container {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.grid-container img {
+  border: 2px solid var(--text-light);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 200px;
+  object-fit: cover;
+  width: 200px;
+  bottom: 50%;
+}
+
 img {
   width: 120px;
   height: auto;

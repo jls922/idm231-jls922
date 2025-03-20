@@ -13,10 +13,7 @@ const meikoButton = document.getElementById('meiko')
 const lilyButton = document.getElementById('lily')
 
 
-
-
 //sounds
-const soundboard = document.getElementById('soundboard');
 function play_audio(src) {
   let audio_element = new Audio();
   if (!audio_element.paused) {
@@ -103,7 +100,6 @@ function getZodiac(month, day) {
       return 'KAITO';
     } else return null;
   }
-
 
 
 const zodiac = [
@@ -223,7 +219,7 @@ function openZodiacPopup(index) {
 }
 
 // Close the popup
-document.getElementById('close-btn').addEventListener('click', function() {
+document.getElementById('close-button').addEventListener('click', function() {
   document.getElementById('overlay').style.display = 'none'; // close
 });
 
@@ -254,6 +250,6 @@ function getZodiac(month, day) {
   }  else if ((month === 1 && day >= 20) || (month === 2 && day <=18)) {
     return 10; // kaito
   } else {
-    return -1; // Invalid date range
+    return -1;
   }
 }
